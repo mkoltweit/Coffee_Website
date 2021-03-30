@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    Michelle Koltweit
+    Mic2195336
+    CIS233DA-#28660
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Steamers Coffee, Steamers, Coffee, Home, Latte, Iced Coffee, Drinks, Cozy, Shop, Music, Contact">
+    <meta name="description" content="Contact Steamers Coffee to book a gig or to leave us feedback">
+    <title>Steamers Coffee</title>
+    <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="images/steamersLogo.png" height="120" width="120" alt="Steamers Coffee Logo"></a>
+        </header>
+        <!--horizontal navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="club.html">Coffee Club</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+                         
+        <main> 
+            <div class="selectOption">  
+                <label for="reason">Choose form:</label><br />
+
+                <select name="reason" id="reason">  
+                    <option value="select">Select Option</option>
+                    <option value="signUp">Coffee Club - Book a gig</option>
+                    <option value="comment">Contact Us - Questions/Comments</option>
+                </select>
+            <!--selectOption div ends-->
+            </div> 
+            <div class="formWrapper">
+                <div id="signUp"> 
+                    <h2>Coffee Club</h2>
+                    <p class='instruction'>Please fill out all fields.</p>
+                    <form method="POST" onsubmit="return validateCoffeeForm()" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+                        <label for="myFName">First Name</label><br />
+                        <input class="perform" type="text" name="First Name" id="myFName"><br />
+                        <label for="myLName">Last Name:</label><br />
+                        <input class="perform" type="text" name="Last Name" id="myLName"><br />
+                        <label for="myEmail">E-mail:</label><br />
+                        <input class="perform" type="email" name="Email" id="myEmail"><br />
+                        <label for="myPhone">Phone:</label><br />
+                        <input class="perform" type="tel" name="Phone Number" id="myPhone"><br />  
+    
+                        <label for="skill">Skill/Talent:</label><br />
+                        <select class="perform" name="Skill" id="skill">  
+                            <option value="select">Select</option>
+                            <option value="guitar">Guitar</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="poetry">Poetry</option>
+                            <option value="sing">Sing</option>
+                            <option value="magic">Magic</option>
+                            <option value="other">Other</option>
+                        </select><br />
+    
+                        <div id="other">
+                            <label for="otherSkill">Other:</label><br />
+                            <input type="text" name="otherSkill" id="otherSkill"><br />
+                        </div>
+    
+                        <label for="day">Preferred Performance Day:</label><br />
+                        <select class="perform" name="Preferred Day" id="day"> 
+                            <option value="select">Select</option> 
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>                    
+                        </select><br /> 
+                        <label for="time">Preferred Performance Time:</label><br />
+                        <select class="perform" name="Preferred Time" id="time">
+                            <option value="select">Select</option>  
+                            <option value="seven">7:00pm-8:00pm</option>
+                            <option value="eight">8:00pm-9:00pm</option>    
+                            <option value="nine">9:00pm-10:00pm</option>                 
+                        </select><br /><br />
+                        <input type="submit" class="formSubmit" id="mySubmit" value="Submit">
+                    </form>
+                <!--signUp div ends-->
+                </div>  
+    
+                <div id="contactUs">
+                    <h2>Contact Us</h2>
+                    <p class='instruction'>Please fill out all fields.</p>
+                    <!--modified form tag-->
+                    <form method="POST" onsubmit="return validateContactForm()" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+                        <label for="firstName">First Name:</label><br />
+                        <input class="contact-us" type="text" name="firstName" id="firstName"><br />
+                        <label for="lastName">Last Name:</label><br />
+                        <input class="contact-us" type="text" name="lastName" id="lastName"><br />
+                        <label for="email">E-mail:</label><br />
+                        <input class="contact-us" type="email" name="email" id="email"><br />
+                        <label for="phone">Phone:</label><br />
+                        <input class="contact-us" type="tel" name="phone" id="phone"><br />
+    
+                        <label for="comments">Questions/Comments:</label><br />
+                        <textarea class="contact-us" name="comments" id="comments" rows="2" cols="20"></textarea><br /><br />
+                        <input type="submit" class="formSubmit" id="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        
+                   
+        </main>
+
+        <footer>
+            Copyright &copy; 2021 Steamers Coffee<br>
+            <a href="mailto:michelle@koltweit.com"><i>michelle@koltweit.com</i></a><br><br>          
+        </footer>
+    <!--div wrapper ends-->    
+    </div>   
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    Michelle Koltweit
+    Mic2195336
+    CIS233DA-#28660
+
+    Iced beverages - [Digital image]. (n.d.). Retrieved from https://istockphoto.6q33.net/c/77643/435504/4205?u=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fcouple-enjoying-coffee-on-the-weekend-gm938345684-256600002
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Steamers Coffee, Steamers, Coffee, Home, Latte, Iced Coffee, Drinks, Cozy, Shop, Music, Thermos, Tea Kettle, Coffee Beans, Prices, Store">
+
+    <meta name="description" content="Steamers Coffee shop also sells hot beverage accessories and our own local coffee beans!">
+    <title>Steamers Coffee</title>
+    <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="images/steamersLogo.png" height="120" width="120" alt="Steamers Coffee Logo"></a>
+        </header>
+        <!--horizontal navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="club.html">Coffee Club</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+                          
+            <!--shopping cart-->
+        <main>
+            <div class="cart">
+                <!--h2 changed-->
+                <h2>Steamers Coffee Shop</h2>
+                <div class="item">
+                    <!--item image-->
+                    <img class="leftfloat" src="images/teaKettle.jpg" alt="Steamers Coffee Tea Kettle" />
+                    <!--h3 element-->
+                    <h3>Tea Kettle</h3>
+                    <!--item description-->
+                    <p>This classic tea kettle makes two quarts of boiling hot water and features a traditional whistle letting you know when water has reached boiling point. $24.95</p>
+                        <!--form with server-side script-->
+                        <form method="post" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+                            <input type="hidden" name="desc1" id="desc1" value="Tea kettle">
+                            <input type="hidden" name="cost1" id="cost1" value="24.95">
+                            <!--add to cart button-->
+                            <input class="cartButton" type="submit" value="Add to Cart">
+                        </form>
+                        <!--line break with clear class-->
+                </div>
+                <br class="clear" />
+
+                <div class="item">
+                    <!--item image-->
+                    <img class="leftfloat" src="images/thermos.jpg" alt="Steamers Coffee Thermos" />
+                    <!--h3 element-->
+                    <h3>Coffee Thermos</h3>
+                    <!--item description-->
+                    <p>This leak proof, no spill thermos will keep beverages hot for 6 hours. Our 20 oz. thermos is easy to carry and will fit into most car cups, bike rack, or hiking backpack.  $14.99
+                    </p>
+                    <!--form with server-side script-->
+                    <form method="post" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+                        <input type="hidden" name="desc2" id="desc2" value="Coffee Thermos">
+                        <input type="hidden" name="cost2" id="cost2" value="14.99">
+                        <!--add to cart button-->
+                        <input class="cartButton" type="submit" value="Add to Cart">
+                    </form>
+                </div>
+                <!--line break with clear class-->
+                <br class="clear" />
+
+                <div class="item">
+                    <!--item image-->
+                    <img class="leftfloat" src="images/coffee.jpg" alt="Steamers Coffee Beans" />
+                    <!--h3 element-->
+                    <h3>Coffee Beans</h3>
+                    <!--item description-->
+                    <p>These delightful, high-quality coffee beans offers a pleasing aroma and toasty flavor with hints of cocoa and brown sugar. A smooth finish you'll come back for again and again. 32oz. $9.95
+                    </p>
+                    <!--form with server-side script-->
+                    <form method="post" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+                        <input type="hidden" name="desc3" id="desc3" value="Coffee Beans">
+                        <input type="hidden" name="cost3" id="cost3" value="9.95">
+                        <!--add to cart button-->
+                        <input class="cartButton" type="submit" value="Add to Cart">
+                    </form>
+                </div>
+                <!--line break with clear class-->
+                <br class="clear" />
+            </div>
+        </main>         
+
+
+        <footer>
+            Copyright &copy; 2021 Steamers Coffee<br>
+            <a href="mailto:michelle@koltweit.com"><i>michelle@koltweit.com</i></a><br><br>          
+        </footer>
+    <!--div wrapper ends-->    
+    </div>   
+</body>
+</html>
